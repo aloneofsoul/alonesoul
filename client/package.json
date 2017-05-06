@@ -10,8 +10,7 @@
     "webpack:client-prod": "NODE_ENV=production webpack --config webpack/client.js --progress ",
     "dist": "npm run clean && npm run webpack:client-prod",
     "start": "CLIENT_PORT=8000 NODE_ENV=development webpack-dashboard -- webpack-dev-server --inline --config webpack/client.js",
-    "start:dist": "npm run dist && cp index.html dist/ && cd dist && open index.html",
-    "precommit": "npm run check && npm test"
+    "start:dist": "npm run dist && cp index.html dist/ && cd dist && open index.html"
   },
   "dependencies": {
     "antd": "2.0.1",
